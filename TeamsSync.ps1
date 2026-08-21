@@ -116,9 +116,10 @@ Please click on "See more" to see the full list.<br>
 $circularGroupsHTML
 "@
   $mailprops = @{
-    From = '$sendMailFrom'
-    To = '$sendMailTo'
+    From = $sendMailFrom
+    To = $sendMailTo
     SmtpServer = 'smtp.office365.com'
+    Port = 587
     BodyAsHtml = $true
     Subject = 'Circular Groups Issue'
   }
